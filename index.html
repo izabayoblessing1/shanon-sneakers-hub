@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Premium men's and women's fashion in Kampala. Shanon Collections offers elegant garments, African wear, and custom orders. Located in central Kampala."/>
+  <meta name="keywords" content="fashion, men's wear, women's wear, Kampala, Uganda, clothing, African wear, custom orders"/>
+  <meta name="author" content="Shanon Collections"/>
+  <meta property="og:title" content="Shanon Collections — Premium Fashion in Kampala"/>
+  <meta property="og:description" content="Discover elegant men's and women's garments in central Kampala. Quality fabrics, latest trends, custom orders."/>
+  <meta property="og:type" content="business.business"/>
+  <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%23c9a84c'>S</text></svg>"/>
+  <title>Shanon Collections — Premium Fashion in Kampala, Uganda</title>
+  <link rel="stylesheet" href="style.css?v=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head> 
+<body>
+
+  <!-- HEADER / NAV -->
+  <header id="header">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-main">Shanon</span>
+        <span class="logo-sub">Collections</span>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#men">Men</a></li>
+          <li><a href="#women">Sneakers Hub</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#home" onclick="closeMobileMenu()">Home</a></li>
+        <li><a href="#men" onclick="closeMobileMenu()">Men</a></li>
+        <li><a href="#women" onclick="closeMobileMenu()">Women</a></li>
+        <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+        <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tagline">Kampala's Finest Shoe Hub</p>
+      <h1 class="hero-title">Dress With<br><em>Elegance</em></h1>
+      <p class="hero-location"> Pentagon City Plaza, Shop o PC1-166, Nabugabo roads — Kampala, Uganda</p>
+      <div class="hero-ctas">
+        <a href="#men" class="btn btn-primary">Shop Men</a>
+        <a href="#women" class="btn btn-outline">Sneakers hub</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- MEN'S SHOE COLLECTION SECTION -->
+  <section id="men" class="section">
+    <div class="section-header">
+      <span class="section-tag">For Him</span>
+      <h2 class="section-title">Men's Shoe Collection</h2>
+      <p class="section-subtitle">Premium footwear for every occasion — comfort meets style</p>
+    </div>
+    <div class="products-grid" id="menGrid"></div>
+    <div class="brand-navigation">
+      <button class="nav-arrow nav-arrow-left" onclick="scrollBrands('menGrid', -1)" title="Previous">◀</button>
+      <div class="brand-dots" id="menPageDots">
+        <span class="men-page-indicator active" onclick="switchMenPage(1)"></span>
+        <span class="men-page-indicator" onclick="switchMenPage(2)"></span>
+      </div>
+      <button class="nav-arrow nav-arrow-right" onclick="scrollBrands('menGrid', 1)" title="Next">▶</button>
+    </div>
+  </section>
+
+  <!-- WOMEN'S SNEAKERS HUB SECTION -->
+  <section id="women" class="section section-alt">
+    <div class="section-header">
+      <span class="section-tag">Best of your Choice</span>
+      <h2 class="section-title">World of Sneakers Hub</h2>
+      <p class="section-subtitle">Stylish and comfortable sneakers for every lifestyle</p>
+    </div>
+    <div class="products-grid" id="womenGrid"></div>
+    <div class="brand-navigation">
+      <button class="nav-arrow nav-arrow-left" onclick="scrollBrands('womenGrid', -1)" title="Previous">◀</button>
+      <div class="brand-dots" id="womenBrandDots"></div>
+      <button class="nav-arrow nav-arrow-right" onclick="scrollBrands('womenGrid', 1)" title="Next">▶</button>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about-section">
+    <div class="about-inner">
+      <div class="about-text">
+        <h2 class="section-title">About Shanon Collections</h2>
+        <span class="section-tag">Our Story</span>
+        <p>Welcome to <strong>Shanon Collections</strong> — your premier fashion destination nestled in the heart of kampala  Nabugabo Road.</p>
+        <p>We bring you a carefully curated selection of men's and women's shoes that blend contemporary trends with timeless African elegance. From smart casual footwear to formal fits, every piece in our store is chosen with quality and style in mind.</p>
+        <p>Visit us today or reach out via WhatsApp for prices, availability, and custom orders.</p>
+        <div class="about-badges">
+          <div class="badge"><span></span> Quality Fabrics</div>
+          <div class="badge"><span></span> Latest Trends</div>
+          <div class="badge"><span></span> Custom Orders</div>
+          <div class="badge"><span></span> Fair Prices</div>
+        </div>
+      </div>
+      <div class="about-info-card">
+        <h3>Find Us</h3>
+        <ul class="info-list">
+          <li>
+            <span class="icon"><i class="fa-solid fa-location-dot" alt="Location" width="28" height="28"></i></span>
+            <div><strong>Location</strong><br>pentagon city plaza,<br>shop no PC1-166<br>Nabugabo road,<br>Kampala, Uganda</div>
+          </li>
+          <li>
+            <span class="icon"><i class="fa-solid fa-clock"alt="Clock" width="28" height="28"></i></span>
+            <div><strong>Hours</strong><br>Mon–Sat: 8:00 AM – 8:00 PM<br>Sunday: 10:00 AM – 6:00 PM</div>
+          </li>
+          <li>
+            <span class="icon"><img src="whatsapp.png" alt="WhatsApp" width="28" height="28"></span>
+            <div><strong>WhatsApp</strong><br>+256 763 889 895</div>
+          </li>
+        </ul>
+        <a href="https://wa.me/256763889895?text=Hello%20Shanon%20Collections!%20I%20would%20like%20to%20inquire%20about%20your%20products." 
+           target="_blank" rel="noopener" class="btn btn-whatsapp">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="20"/>
+          Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="section why-choose-us">
+    <div class="section-header">
+      <span class="section-tag">Our Promise</span>
+      <h2 class="section-title">Why Choose Shanon Collections?</h2>
+      <p class="section-subtitle">Experience fashion that celebrates quality, culture, and authenticity</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon"><img src="premium quality.jpeg"></div>
+        <h3>Premium Quality</h3>
+        <p>Every shoe is carefully selected for superior materials, perfect construction, and lasting durability. We believe in quality over quantity.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><img src="trendy designs.jpeg"></div>
+        <h3>Trendy Designs</h3>
+        <p>Stay ahead with our curated collection of contemporary styles blended with timeless African elegance and sophistication.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><img src="custom order.jpeg"></div>
+        <h3>Custom Orders</h3>
+        <p>Can't find the perfect fit? We offer custom tailored services to bring your vision to life with personalized excellence.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><img src="fairprice.jpg"></div>
+        <h3>Fair Pricing</h3>
+        <p>Enjoy premium shoe styles without breaking the bank. Our competitive prices reflect the true value of quality craftsmanship.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><img src="delivery.jpeg"></div>
+        <h3>Quick Service</h3>
+        <p>Need something urgently? We offer same-day consultations and expedited custom orders through our WhatsApp service.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><img src="expert advice.jpeg"></div>
+        <h3>Expert Advice</h3>
+        <p>Our passionate consultants are always ready to help you find the perfect piece for any occasion or style.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section testimonials-section section-alt">
+    <div class="section-header">
+      <span class="section-tag">Customer Love</span>
+      <h2 class="section-title">What Our Customers Say</h2>
+      <p class="section-subtitle">Join hundreds of satisfied customers who've discovered their style with us</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="interactive-stars" data-rating="5">
+          <span class="star" data-value="1">★</span>
+          <span class="star" data-value="2">★</span>
+          <span class="star" data-value="3">★</span>
+          <span class="star" data-value="4">★</span>
+          <span class="star" data-value="5">★</span>
+        </div>
+        <p>"Shanon Collections has transformed my wardrobe. The quality is exceptional and the customer service is outstanding. Highly recommended!"</p>
+        <div class="testimonial-author">
+          <strong>Sarah M.</strong>
+          <span>Kampala</span>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="interactive-stars" data-rating="5">
+          <span class="star" data-value="1">★</span>
+          <span class="star" data-value="2">★</span>
+          <span class="star" data-value="3">★</span>
+          <span class="star" data-value="4">★</span>
+          <span class="star" data-value="5">★</span>
+        </div>
+        <p>"The sports shoes I ordered were perfect. The team listened to exactly what I needed and delivered beyond my expectations."</p>
+        <div class="testimonial-author">
+          <strong>David K.</strong>
+          <span>Business Owner</span>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="interactive-stars" data-rating="5">
+          <span class="star" data-value="1">★</span>
+          <span class="star" data-value="2">★</span>
+          <span class="star" data-value="3">★</span>
+          <span class="star" data-value="4">★</span>
+          <span class="star" data-value="5">★</span>
+        </div>
+        <p>"Finally, a place that understands African fashion! The collection beautifully blends modern trends with cultural pride."</p>
+        <div class="testimonial-author">
+          <strong>Amina T.</strong>
+          <span>Fashion Enthusiast</span>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="interactive-stars" data-rating="5">
+          <span class="star" data-value="1">★</span>
+          <span class="star" data-value="2">★</span>
+          <span class="star" data-value="3">★</span>
+          <span class="star" data-value="4">★</span>
+          <span class="star" data-value="5">★</span>
+        </div>
+        <p>"Their WhatsApp service is incredibly convenient. Quick responses, amazing prices, and they always have something new in stock."</p>
+        <div class="testimonial-author">
+          <strong>James P.</strong>
+          <span>Kampala</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- RATE US SECTION -->
+    <div class="testimonials-separator"></div>
+    
+    <div class="rate-us-section">
+      <div class="rate-us-content">
+        <h3>Rate Our Service</h3>
+        <p>Have you experienced Shanon Shoe hub? Share your rating!</p>
+        <div class="rating-container">
+          <div class="interactive-stars rate-input" id="ratingStars">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+          </div>
+          <div class="rating-feedback" id="ratingFeedback"></div>
+        </div>
+        <input type="text" id="ratingComment" placeholder="Share your experience (optional)..." maxlength="200" class="rating-comment-input"/>
+        <button class="btn btn-primary" onclick="submitRating()">Submit Your Rating</button>
+        <div class="rating-message" id="ratingMessage"></div>
+      </div>
+      <div class="rating-stats">
+        <div class="stat-item">
+          <span class="stat-number" id="avgRating">4.8</span>
+          <span class="stat-label">Average Rating</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" id="totalRatings">247+</span>
+          <span class="stat-label">Customer Reviews</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number"></span>
+          <span class="stat-label">Highly Rated</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq-section">
+    <div class="section-header">
+      <span class="section-tag">Questions?</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-subtitle">Everything you would need to know about Shanon Collections</p>
+    </div>
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>Do you offer international shipping?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Currently, we operate in Kampala and offer local service through WhatsApp. For inquiries about shipping to other regions, please contact us directly via WhatsApp.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>How long does shoe customization take?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Standard customization orders typically take 5-7 business days. We offer expedited 2-3 day service for urgent orders at a small premium. Contact us for current timelines.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>What payment methods do you accept? Tell me more.</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>We accept cash payments in-store and mobile money transfers (MTN, Airtel). WhatsApp consultations allow you to arrange payments that suit your preference.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>Can I return or exchange items?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes! Items can be returned or exchanged within 7 days of purchase in their original condition. Custom orders are non-refundable but can be exchanged for different styles.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>Do you have a physical store I can visit?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes! Visit us at Pentagon city plaza room PC1-166, nabugabo Road, Kampala. We're open Monday–Saturday, 8:00 AM – 8:00 PM. Sunday hours are 10:00 AM – 6:00 PM. Feel free to browse and get personalized styling advice!</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          <span>How can I stay updated on new collections?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Follow us on social media and chat with us via WhatsApp to get exclusive previews of new arrivals, seasonal sales, and special promotions!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAYMENT / MOBILE MONEY -->
+  <section class="section payment-section">
+    <div class="section-header">
+      <span class="section-tag">Easy Payment</span>
+      <h2 class="section-title">Pay With MTN Mobile Money</h2>
+      <p class="section-subtitle">Quick and secure payment option for your purchases and custom orders</p>
+    </div>
+    
+    <div class="payment-container">
+      <div class="payment-info">
+        <div class="payment-card">
+          <div class="payment-icon"></div>
+          <h3>MTN Mobile Money</h3>
+          <p class="mtn-number">0763889895 </p>
+          <p class="payment-holder">Business Name: Shanon Collections</p>
+          
+          <div class="payment-steps">
+            <h4>How to Pay:</h4>
+            <ol>
+              <li>Dial <strong>*165#</strong> on your MTN phone</li>
+              <li>Select "Pay Bills or Merchant"</li>
+              <li>Enter merchant code or phone: <strong>0763 889 895</strong></li>
+              <li>Enter the amount for your purchase</li>
+              <li>Confirm and complete the transaction</li>
+              <li>Share your receipt via WhatsApp for verification</li>
+            </ol>
+          </div>
+
+          <div class="payment-benefits">
+            <span class="benefit"> Instant Payment</span>
+            <span class="benefit"> No Extra Fees</span>
+            <span class="benefit"> Secure & Safe</span>
+            <span class="benefit"> Available 24/7</span>
+          </div>
+        </div>
+
+        
+
+      <div class="payment-features">
+        <div class="feature-item">
+          <span class="feature-number">1</span>
+          <div>
+            <h4>Simple Process</h4>
+            <p>Pay directly via MTN without creating any account</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-number">2</span>
+          <div>
+            <h4>Fast Delivery</h4>
+            <p>Once payment verified, we process your order immediately</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-number">3</span>
+          <div>
+            <h4>Safe & Reliable</h4>
+            <p>Secure transactions with MTN Uganda's trusted platform</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-number">4</span>
+          <div>
+            <h4>Customer Support</h4>
+            <p>WhatsApp us if you have any questions about payment</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="payment-cta">
+      <p>Questions about payment? </p>
+      <a href="https://wa.me/256763889895?text=I%20have%20a%20question%20about%20MTN%20Mobile%20Money%20payment" target="_blank" rel="noopener" class="btn btn-outline">Chat on WhatsApp</a>
+      <b>Feel free to always reach out to us</b>
+      <br> For the best Quality and affordabe <br> shoe prices We are ready <br> 
+      to serve you with the best services<br>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="section-header">
+      <span class="section-tag">Get In Touch</span>
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-subtitle">For inquiries, prices, or custom orders — we're always available</p>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <div class="contact-form-container">
+      <form id="contactForm" action="https://formspree.io/f/mlgakvky" method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="contactName">Full Name</label>
+          <input 
+            type="text" 
+            id="contactName" 
+            name="name" 
+            placeholder="Your full name" 
+            required 
+            class="form-input"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="contactEmail">Email Address</label>
+          <input 
+            type="email" 
+            id="contactEmail" 
+            name="email" 
+            placeholder="your.email@example.com" 
+            required 
+            class="form-input"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="contactPhone">Phone Number (Optional)</label>
+          <input 
+            type="tel" 
+            id="contactPhone" 
+            name="phone" 
+            placeholder="+256 7XX XXX XXX" 
+            class="form-input"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="contactSubject">Subject</label>
+          <select id="contactSubject" name="subject" class="form-input" required>
+            <option value="">Select a subject</option>
+            <option value="General Inquiry">General Inquiry</option>
+            <option value="Product Information">Product Information</option>
+            <option value="Custom Order">Custom Order</option>
+            <option value="Pricing">Pricing</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="contactMessage">Message</label>
+          <textarea 
+            id="contactMessage" 
+            name="message" 
+            placeholder="Tell us more about your inquiry..." 
+            rows="6" 
+            required 
+            class="form-input form-textarea"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary btn-full-width">Send Message</button>
+          <div class="form-message" id="formMessage"></div>
+        </div>
+      </form>
+    </div>
+
+    <div class="contact-ctas">
+      <a href="https://wa.me/256763889895?text=Hello%20Shanon%20Collections!%20I%20would%20like%20to%20inquire%20about%20your%20products." 
+         target="_blank" rel="noopener" class="contact-card whatsapp-card">
+        <div class="cc-icon"><img src="whatsapp.png" alt="WhatsApp" width="48" height="48"></div>
+        <h3>WhatsApp Us</h3>
+        <p>+256 763 889 895</p>
+        <span class="cc-link">Start Chat →</span>
+      </a>
+      <div class="contact-card location-card">
+        <div class="cc-icon"><i class="fa-solid fa-location-dot" alt="Location" width="48" height="48"></i></div>
+        <h3>Visit Our Store</h3>
+        <p>pentagon city plaza,<br> shop no PC1-166, <br>Nabugabo road<br>Kampala, Uganda</p>
+        <span class="cc-link">
+  <a href="https://www.google.com/maps/search/Pentagon+City+Plaza/@0.3139191,32.5562414,15z" target="_blank">
+    Open Maps
+  </a>
+</span>
+      </div>
+      <div class="contact-card hours-card">
+        <div class="cc-icon"><i class="fa-solid fa-clock" alt="Clock" width="48" height="48"></i></div>
+        <h3>Opening Hours</h3>
+        <p>Mon–Sat: 8AM – 8PM<br>Sunday: 10AM – 6PM</p>
+        <span class="cc-link">Always Here for You</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-main">Shanon</span>
+        <span class="logo-sub">Collections</span>
+        <p>Your style, our passion.<br>pentagon city plaza, Kampala.</p>
+        <div class="footer-social">
+          <a href="https://wa.me/256763889895" target="_blank" rel="noopener" title="WhatsApp"><img src="whatsapp.png" alt="WhatsApp" width="22" height="22"/></a>
+          <a href="tel:+256763889895" title="Call"><i class="fa-brands fa-whatsapp" alt="Call" width="22" height="22"></i></a>
+          <a href="https://www.google.com/maps/search/Pentagon+City+Plaza/@0.3139191,32.5562414,15z" target="_blank" rel="noopener" title="Location"><i class="fa-solid fa-location-dot" alt="Location" width="22" height="22"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#men">Men's Wear</a></li>
+          <li><a href="#women">Women's Wear</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-info">
+        <h4>Information</h4>
+        <ul>
+          <li><a href="#faq">FAQ</a></li>
+          <li>Custom Orders Available</li>
+          <li>Same-Day Consultations</li>
+          <li>Mobile Money Accepted</li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact & Hours</h4>
+        <p><i class="fa-solid fa-location-dot"></i> pentagon city plaza, nabugabo road, Kampala</p>
+        <p><i class="fa-brands fa-whatsapp"></i> +256 763889895</p>
+        <p><i class="fa-solid fa-clock"></i> Mon–Sat: 8AM–8PM</p>
+        <p class="footer-hours-note">Sunday: 10AM–6PM</p>
+      </div>
+    </div>
+    <div class="footer-trust">
+      <span class="trust-badge"> Quality Guaranteed</span>
+      <span class="trust-badge"> Custom Orders</span>
+      <span class="trust-badge"> Fair Prices</span>
+      <span class="trust-badge"> Expert Team</span>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Shanon Collections. All rights reserved. | Pentagon city plaza, Kampala, Uganda | </p>
+    </div>
+  </footer>
+
+  <!-- CHATBOT BUTTON -->
+  <div class="chatbot-trigger" id="chatbotTrigger" onclick="toggleChatbot()">
+    <span class="chatbot-icon"><img src="whatsapp.png" alt="WhatsApp" width="24" height="24"></span>
+    <span class="chatbot-label">Ask Us</span>
+    <span class="chat-badge" id="chatBadge">1</span>
+  </div>
+
+  <!-- CHATBOT PANEL -->
+  <div class="chatbot-panel" id="chatbotPanel">
+    <div class="chatbot-header">
+      <div class="chatbot-avatar">SC</div>
+      <div>
+        <strong>Shanon Collections</strong>
+        <span class="chatbot-status">● Online</span>
+      </div>
+      <button class="chatbot-close" onclick="toggleChatbot()">✕</button>
+    </div>
+    <div class="chatbot-messages" id="chatMessages">
+      <!-- Messages injected by JS -->
+    </div>
+    <div class="chatbot-quick-replies" id="quickReplies"></div>
+    <div class="chatbot-input-row">
+      <input type="text" id="chatInput" placeholder="Type your message…" onkeydown="handleChatKey(event)"/>
+      <button onclick="sendChatMessage()">➤</button>
+    </div>
+    <div class="chatbot-footer">
+      Powered by Shanon Collections &nbsp;|&nbsp;
+      <a href="https://wa.me/256763889895" target="_blank" rel="noopener">Open WhatsApp ↗</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
